@@ -15,16 +15,9 @@ h1 {
   font-weight: 400;
 }
 
-h3 {
+ul {
   color: #fff;
-}
-
-h4 {
-  color: #fff;
-}
-
-h2 {
-  color: #fff;
+  list-style: none;
 }
 
 .weatherConditions {
