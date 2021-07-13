@@ -1,0 +1,43 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #3c3c3c;
+  font-weight: 500;
+  padding: 75px 0 5px 0;
+}
+
+.country {
+  display: inline;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: rgb(164, 164, 164);
+  font-weight: 400;
+}
+
+h3 {
+  color: #fff;
+}
+
+h4 {
+  color: #fff;
+}
+
+h2 {
+  color: #fff;
+}
+
+.weatherConditions {
+  color: #fff;
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 20px;
+  max-width: 600px;
+  height: 450px;
+  border-radius: 18px;
+  background-color: #437afe;
+}
