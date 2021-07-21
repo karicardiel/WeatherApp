@@ -2,13 +2,22 @@ body {
   font-family: "Poppins", sans-serif;
 }
 h1 {
-  font-family: "Poppins", sans-serif;
   font-size: 25px;
   color: #3c3c3c;
   font-weight: 500;
   padding: 75px 0 5px 0;
 }
-
+.weather-app-wrapper {
+  max-width: 450px;
+  margin: 30px auto;
+}
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 20px;
+  height: 450px;
+  border-radius: 18px;
+  background-color: #437afe;
+}
 .country {
   display: inline;
   font-size: 20px;
@@ -20,26 +29,38 @@ img {
   display: block;
   margin: 0 auto;
 }
-
-ul {
+.weatherStatus {
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 6px 0 7px 0;
+  padding: 7px 0 0 0;
   color: #fff;
-  list-style: none;
 }
 
-.weatherConditions {
-  color: #fff;
+.day {
+  color: #85b4ff;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding: 0px 0 8px 0px;
 }
 
-.weather-app {
-  border: 1px solid #dadde1;
-  padding: 20px;
-  max-width: 450px;
-  height: 450px;
-  border-radius: 18px;
-  background-color: #437afe;
+.temperature {
+  color: #fff;
+  font-size: 75px;
+  font-weight: 500;
+}
+
+.measure {
+  display: inline;
+  position: relative;
+  top: -43px;
+  right: -15px;
+  color: #85b4ff;
+  font-size: 15px;
 }
 
 a {
-  color: #0d6efd;
   text-decoration: none;
 }
