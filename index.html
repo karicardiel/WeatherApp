@@ -16,27 +16,25 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
     rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>WeatherApp</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-      <h1>
-        Miami,
-        <div class="country">United States</div>
-      </h1>
+      <h1 id="city"></h1>
       <div class="weather-app">
         <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="sunny">
         
-          <h3 class="weatherStatus">Sunny</h3>
-          <h4 class="day">Monday 2:00pm</h4>
-          <h2 class="temperature">25º<div class=measure>C | °F</div></h2>
+          <h3 id="weatherStatus"></h3>
+          <h4 id="date"></h4>
+          <h2 id ="temperature"></h2><div class=measure>C | °F</div>
         
         <div class="row row-cols-2 weatherConditions">
-          <div class="col">Humidity</div>
-          <div class="col">Feels like</div>
-          <div class="col">Wind</div>
+          <div class="col">Humidity: <span id ="humidity"></span>%</div>
+          <div class="col">Feels like: <span id="feels"></span>°</div>
+          <div class="col">Wind: <span id ="wind"></span> k/ph</div>
           <div class="col">Index UV</div>
         </div>
        
@@ -46,5 +44,6 @@
         <a href="https://github.com/karicardiel/WeatherApp.git" target="_blank">Open-sourced code </a>by Kari Cardiel
       </small>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
