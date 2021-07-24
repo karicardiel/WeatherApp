@@ -31,6 +31,10 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let feelsElement = document.querySelector("#feels");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
+  let highElement = document.querySelector("#high");
+  let lowElement = document.querySelector("#low");
+
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   weatherStatutsElement.innerHTML = response.data.weather[0].description;
@@ -38,10 +42,29 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   feelsElement.innerHTML = Math.round(response.data.main.feels_like);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+  highElement.innerHTML = Math.round(response.data.main.temp_max);
+  lowElement.innerHTML = Math.round(response.data.main.temp_min);
 }
 
-let apiKey = "1f83f0ba3b574331625068275d764760";
-let city = "Miami";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+function search(city) {
+  let apiKey = "1f83f0ba3b574331625068275d764760";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemperature);
+}
 
-axios.get(apiUrl).then(displayTemperature);
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+  console.log(cityInputElement.value);
+}
+
+search("Miami");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

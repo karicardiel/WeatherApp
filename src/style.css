@@ -7,6 +7,14 @@ h1 {
   font-weight: 500;
   padding: 70px 0 5px 0;
 }
+.search-wrapper {
+  max-width: 450px;
+  margin: 30px auto;
+}
+form {
+  margin: 0 auto;
+}
+
 .weather-app-wrapper {
   max-width: 450px;
   margin: 30px auto;
