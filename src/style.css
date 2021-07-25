@@ -78,6 +78,17 @@ h2 {
   text-align: center;
 }
 
+a.active {
+  color: #fff;
+  cursor: default;
+  text-decoration: none;
+}
+
+a.active:hover {
+  text-decoration: none;
+}
+
 a {
+  color: #85b4ff;
   text-decoration: none;
 }
