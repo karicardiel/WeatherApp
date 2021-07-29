@@ -5,7 +5,7 @@ h1 {
   font-size: 30px;
   color: #3c3c3c;
   font-weight: 500;
-  padding: 70px 0 5px 0;
+  padding: 10px 0 5px 0;
 }
 .search-wrapper {
   max-width: 450px;
@@ -26,6 +26,24 @@ form {
   border-radius: 18px;
   background-color: #437afe;
 }
+.weather-forecast {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: #838383;
+}
+.weather-forecast-temperature {
+  color: #838383;
+  font-size: 14px;
+}
+
+.weather-forecast-low {
+  opacity: 0.5;
+}
+
 p {
   display: inline;
   font-size: 20px;
@@ -62,6 +80,9 @@ h2 {
   font-size: 75px;
   font-weight: 500;
   text-align: center;
+}
+.upcoming-days {
+  margin-top: 20px;
 }
 
 .measure {
