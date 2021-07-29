@@ -29,6 +29,12 @@ form {
 .weather-forecast {
   margin-top: 15px;
   text-align: center;
+  max-width: 450px;
+}
+
+.row {
+  --bs-gutter-x: 0.5rem;
+  --bs-gutter-y: 0;
 }
 
 .weather-forecast-date {
